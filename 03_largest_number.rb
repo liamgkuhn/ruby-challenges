@@ -18,6 +18,18 @@
 
 def largest_number (number_1, number_2)
   # Your code here
+  if number_1 > number_2 
+    puts "the largest number is #{number_1}"
+  elsif number_2 > number_1
+    puts "the largest number is #{number_2}"
+  elsif number_1 == number_2
+    puts "equal in value"
+  
+  end
 end
 
-largest_number(100,50)
+puts "please enter a number"
+num1 = gets.chomp.to_i
+puts "and another"
+num2 = gets.chomp.to_i
+largest_number(num1, num2)
