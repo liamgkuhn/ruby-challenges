@@ -12,12 +12,17 @@
 
 def sum_numbers (numbers)
   sum = 0
-  numbers.each {|a| sum += sum}
-return sum
+  numbers.each do |num|
+    sum += num
+  end
+  puts sum
+
 end
 
-array = Array.new[1, 2, 3, 4, 5]
-puts array.sum_numbers
+array = [1, 2, 3, 4, 5]
+
+sum_numbers(array)
+
 
 
 # OPTIONAL:
