@@ -11,8 +11,13 @@
 # ruby tests/04_sum_numbers_test.rb
 
 def sum_numbers (numbers)
-  # Your code here
+  sum = 0
+  numbers.each {|a| sum += sum}
+return sum
 end
+
+array = Array.new[1, 2, 3, 4, 5]
+puts array.sum_numbers
 
 
 # OPTIONAL:
